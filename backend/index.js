@@ -21,7 +21,11 @@ const storage = multer.diskStorage({
 const upload = multer({ storage });
 
 app.post('/upload', upload.array('files'), (req, res) => {
-  res.json({ files: req.files });
+  const files = req.files.map(f => ({
+    originalname: f.originalname,
+    filename: f.filename
+  }));
+  res.json({ files });
 });
 
 app.delete('/delete/:filename', (req, res) => {
@@ -35,4 +39,3 @@ app.delete('/delete/:filename', (req, res) => {
 app.listen(PORT, () => {
   console.log(`Servidor rodando na porta ${PORT}`);
 });
-
