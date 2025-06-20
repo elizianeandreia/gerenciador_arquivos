@@ -28,7 +28,7 @@ Um sistema simples e funcional para **upload**, **visualização** e **exclusão
 ### Frontend
 
 - [React](https://reactjs.org/)
-- HTML e CSS (ou Tailwind, se quiser futuramente)
+- HTML e CSS 
 - Fetch API
 
 ### Backend
