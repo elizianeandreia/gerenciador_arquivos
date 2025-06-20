@@ -14,7 +14,7 @@ export default function App() {
     for (const file of files) {
       formData.append('files', file);
     }
-    const res = await fetch('http://localhost:3001/upload', {
+    const res = await fetch('/upload', {
       method: 'POST',
       body: formData
     });
@@ -24,7 +24,7 @@ export default function App() {
   }
 
   function handleDelete(filename) {
-    fetch(`http://localhost:3001/delete/${filename}`, {
+    fetch(`/delete/${filename}`, {
       method: 'DELETE'
     }).then(() => {
       setUploaded(prev => prev.filter(f => f.filename !== filename));
@@ -54,7 +54,7 @@ export default function App() {
             <ul>
               {uploaded.map(file => (
                 <li key={file.filename}>
-                  <a href={`http://localhost:3001/uploads/${file.filename}`} target="_blank" rel="noopener noreferrer">
+                  <a href={`/uploads/${file.filename}`} target="_blank" rel="noopener noreferrer">
                     {file.originalname}
                   </a>
                   <button onClick={() => handleDelete(file.filename)}>Excluir</button>
@@ -65,5 +65,5 @@ export default function App() {
         </section>
       </main>
     </div>
-);
+  );
 }
