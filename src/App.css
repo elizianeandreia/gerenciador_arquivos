@@ -1,38 +1,198 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8fafc;
+  color: #2e3440;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.app {
+  display: flex;
   min-height: 100vh;
+}
+
+.sidebar {
+  background-color: #2e3440;
+  color: #eceff4;
+  width: 220px;
+  padding: 2rem 1.5rem;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: flex-start;
+}
+
+.sidebar h2 {
+  font-weight: 900;
+  font-size: 1.8rem;
+  margin-bottom: 3rem;
+  letter-spacing: 0.1em;
+}
+
+.sidebar nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.sidebar nav ul li {
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.sidebar nav ul li button {
+  background: none;
+  border: none;
+  color: #eceff4;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.sidebar nav ul li button:disabled {
+  color: #7f8c8d;
+  cursor: not-allowed;
+}
+
+.sidebar nav ul li.active {
+  color: #88c0d0;
+  font-weight: 900;
+}
+
+.main-content {
+  flex: 1;
+  padding: 2.5rem 3rem;
+  background-color: #eceff4;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content header h1 {
+  font-weight: 900;
+  font-size: 2rem;
+  color: #3b4252;
+  margin-bottom: 2rem;
+}
+
+.upload-section {
+  margin-bottom: 2rem;
+}
+
+.upload-section input[type='file'] {
+  display: none;
+}
+
+.upload-label {
+  background-color: #5e81ac;
   color: white;
+  padding: 0.8rem 1.4rem;
+  border-radius: 14px;
+  cursor: pointer;
+  font-weight: 700;
+  user-select: none;
+  display: inline-block;
+  transition: background-color 0.25s ease;
 }
 
-.App-link {
-  color: #61dafb;
+.upload-label:hover {
+  background-color: #4c566a;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.files-section {
+  flex-grow: 1;
+  overflow-y: auto;
+}
+
+.empty-msg {
+  font-style: italic;
+  color: #7f8c8d;
+}
+
+.files-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.file-card {
+  background: white;
+  border-radius: 12px;
+  padding: 1rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 8px rgb(0 0 0 / 0.1);
+  border: 1px solid #d8dee9;
+  user-select: none;
+}
+
+.file-info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.file-icon {
+  font-size: 2.2rem;
+}
+
+.file-info strong {
+  font-weight: 700;
+  font-size: 1rem;
+  color: #2e3440;
+}
+
+.file-info p {
+  font-size: 0.85rem;
+  color: #4c566a;
+}
+
+.file-info a {
+  font-size: 0.85rem;
+  margin-left: 1rem;
+  color: #5e81ac;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.file-info a:hover {
+  text-decoration: underline;
+}
+
+.file-card button {
+  background-color: #bf616a;
+  border: none;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: 700;
+  transition: background-color 0.25s ease;
+}
+
+.file-card button:hover {
+  background-color: #a54250;
+}
+
+@media (max-width: 720px) {
+  .app {
+    flex-direction: column;
   }
-  to {
-    transform: rotate(360deg);
+  .sidebar {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 1rem 0;
+  }
+  .sidebar h2 {
+    display: none;
+  }
+  .main-content {
+    padding: 1rem 1.5rem;
+  }
+  .files-list {
+    gap: 0.6rem;
   }
 }
