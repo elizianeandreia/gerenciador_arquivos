@@ -1,70 +1,74 @@
-# Getting Started with Create React App
+# 📁 Sistema de Distribuição de Arquivos
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Um sistema simples e funcional para **upload**, **visualização** e **exclusão** de arquivos. Ideal para distribuição de documentos, relatórios ou materiais entre equipes.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🚀 Funcionalidades
 
-### `npm start`
+- 📤 Upload de múltiplos arquivos
+- 📄 Listagem dos arquivos enviados
+- 🗑️ Exclusão de arquivos individuais
+- 🌐 Integração frontend React + backend Node.js/Express
+- 🗂️ Armazenamento local de arquivos na pasta `uploads`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🖼️ Demonstração
 
-### `npm test`
+> 🔗 Deploy do frontend:  
+> [https://elizianeandreia.github.io/gerenciador_arquivos/](https://elizianeandreia.github.io/gerenciador_arquivos/)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+> ⚠️ *Para que o botão "Enviar" funcione corretamente, é necessário que o backend esteja rodando localmente em `http://localhost:3001`.*
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 📦 Tecnologias utilizadas
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Frontend
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- [React](https://reactjs.org/)
+- HTML e CSS (ou Tailwind, se quiser futuramente)
+- Fetch API
 
-### `npm run eject`
+### Backend
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- [Node.js](https://nodejs.org/)
+- [Express](https://expressjs.com/)
+- [Multer](https://github.com/expressjs/multer)
+- [CORS](https://github.com/expressjs/cors)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 🔧 Como rodar localmente
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+###1. Clone o repositório:
+git clone https://github.com/elizianeandreia/gerenciador_arquivos.git
+cd gerenciador_arquivos
 
-## Learn More
+###2. Backend:cd backend
+npm install
+npm start
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+###3. Frontend:
+cd ../frontend
+npm install
+npm start
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+###4. 📂 Estrutura do projeto
+gerenciador_arquivos/
+│
+├── backend/
+│   ├── index.js
+│   └── uploads/
+│
+├── frontend/
+│   ├── src/
+│   │   └── App.js
+│   └── package.json
+│
+├── README.md
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+👩‍💻 Desenvolvedora
+Eliziane Andreia Junckes
