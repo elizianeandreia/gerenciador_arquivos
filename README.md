@@ -4,26 +4,26 @@ Um sistema simples e funcional para **upload**, **visualização** e **exclusão
 
 ---
 
-## 🚀 Funcionalidades
+##  Funcionalidades
 
-- 📤 Upload de múltiplos arquivos
-- 📄 Listagem dos arquivos enviados
-- 🗑️ Exclusão de arquivos individuais
-- 🌐 Integração frontend React + backend Node.js/Express
-- 🗂️ Armazenamento local de arquivos na pasta `uploads`
+-  Upload de múltiplos arquivos
+- Listagem dos arquivos enviados
+-  Exclusão de arquivos individuais
+-  Integração frontend React + backend Node.js/Express
+- Armazenamento local de arquivos na pasta `uploads`
 
 ---
 
-## 🖼️ Demonstração
+##  Demonstração
 
-> 🔗 Deploy do frontend:  
+>  Deploy do frontend:  
 > [https://elizianeandreia.github.io/gerenciador_arquivos/](https://elizianeandreia.github.io/gerenciador_arquivos/)
 
-> ⚠️ *Para que o botão "Enviar" funcione corretamente, é necessário que o backend esteja rodando localmente em `http://localhost:3001`.*
+>  *Para que o botão "Enviar" funcione corretamente, é necessário que o backend esteja rodando localmente em `http://localhost:3001`.*
 
 ---
 
-## 📦 Tecnologias utilizadas
+##  Tecnologias utilizadas
 
 ### Frontend
 
@@ -40,7 +40,7 @@ Um sistema simples e funcional para **upload**, **visualização** e **exclusão
 
 ---
 
-## 🔧 Como rodar localmente
+## Como rodar localmente
 
 ###1. Clone o repositório:
 git clone https://github.com/elizianeandreia/gerenciador_arquivos.git
@@ -70,5 +70,5 @@ gerenciador_arquivos/
 ├── README.md
 
 
-👩‍💻 Desenvolvedora
+Desenvolvedora
 Eliziane Andreia Junckes
